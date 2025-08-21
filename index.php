@@ -304,7 +304,7 @@ minlength="3" placeholder="Your name" required>
 required>
 
 </div>
-<div class="form-group position-relative">
+<div class="form-group position-relative hl">
 <label>Email ID <span class="text-danger">*</span>
 </label>
 <i data-feather="mail" class="fea icon-sm icons"></i>
