@@ -86,42 +86,43 @@ jobs:
           cd optimized
           find . -iname "*.php" -type f | while read -r file; do
             echo "Adding lazy loading to: $file"
-            node -e "
-              const fs = require('fs');
-              const cheerio = require('cheerio');
+            node -e '
+              const fs = require("fs");
+              const cheerio = require("cheerio");
 
               try {
-                let html = fs.readFileSync('$file', 'utf8');
+                let html = fs.readFileSync("'$file'", "utf8");
 
                 // Extract PHP blocks
                 const phpBlocks = [];
                 html = html.replace(/<\?php[\s\S]*?\?>/g, (match) => {
                   phpBlocks.push(match);
-                  return `___PHP_BLOCK_${phpBlocks.length - 1}___`;
+                  return "___PHP_BLOCK_" + (phpBlocks.length - 1) + "___";
                 });
 
                 // Load HTML into Cheerio
-                const \$ = cheerio.load(html, { decodeEntities: false });
+                const $ = cheerio.load(html, { decodeEntities: false });
 
                 // Process <img> tags
-                \$('img').each((_, el) => {
-                  const \$img = \$(el);
-                  if (!\$img.attr('loading')) { \$img.attr('loading', 'lazy'); }
-                  if (!\$img.attr('decoding')) { \$img.attr('decoding', 'async'); }
+                $("img").each((_, el) => {
+                  const $img = $(el);
+                  if (!$img.attr("loading")) { $img.attr("loading", "lazy"); }
+                  if (!$img.attr("decoding")) { $img.attr("decoding", "async"); }
                 });
 
                 // Restore PHP blocks
-                let finalHtml = \$.html();
+                let finalHtml = $.html();
                 phpBlocks.forEach((block, i) => {
-                  finalHtml = finalHtml.replace(`___PHP_BLOCK_${i}___`, block);
+                  finalHtml = finalHtml.replace("___PHP_BLOCK_" + i + "___", block);
                 });
 
-                fs.writeFileSync('$file', finalHtml);
+                fs.writeFileSync("'$file'", finalHtml);
               } catch (error) {
-                console.log('Error processing $file:', error.message);
+                console.log("Error processing '$file':", error.message);
               }
-            "
+            '
           done
+
 
       - name: Add preload for critical resources
         run: |
