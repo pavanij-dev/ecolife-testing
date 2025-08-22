@@ -135,7 +135,7 @@ jobs:
 
       - name: Gzip CSS and JS assets
         run: |
-          find optimized/css optimized/js -type f \( -iname "*.css" -o -iname "*.js" \) -exec gzip -kf {} \;
+          find assets/css assets/js -type f \( -iname "*.css" -o -iname "*.js" \) -exec gzip -kf {} \;
 
       - name: Create optimization report
         run: |
