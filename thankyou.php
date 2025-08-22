@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
 <title>Ultra Luxury 3BHK Apartments in Varthur | Ecolife Eon Akash</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content=" Buy a high-end 3 BHK apartments in Varthur, Bangalore, close to Marathahalli, Tech parks, and situated in a prime location. Prices start at 1.28 Crore.">
-<meta name="keywords" content="3bhk apartments in varthur, ecolife 3bhk apartment, 3bhk apartments for sale near me, 3 bhk flats in varthur for sale, luxury 3bhk apartment in varthur"/>
+<meta name="keywords" content="3bhk apartments in varthur, ecolife 3bhk apartment, 3bhk apartments for sale near me, 3 bhk flats in varthur for sale, luxury 3bhk apartment in varthur">
 <meta name="author" content="Ecolife builders and developers">
 <meta name="robots" content="index, follow">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,7 +12,7 @@
 <!-- Social media sharing meta tags -->
 <meta property="og:title" content="Ultra Luxury 3BHK Apartments in Varthur | Ecolife Eon Akash">
 <meta property="og:description" content=" Buy a high-end 3 BHK apartments in Varthur, Bangalore, close to Marathahalli, Tech parks, and situated in a prime location. Prices start at 1.28 Crore.">
-<meta name="og-keywords" content="3bhk apartments in varthur, ecolife 3bhk apartment, 3bhk apartments for sale near me, 3 bhk flats in varthur for sale, luxury 3bhk apartment in varthur"/>
+<meta name="og-keywords" content="3bhk apartments in varthur, ecolife 3bhk apartment, 3bhk apartments for sale near me, 3 bhk flats in varthur for sale, luxury 3bhk apartment in varthur">
 <meta property="og:image" content="https://www.ecolifedevelopers.com/EON-Akash-Block-B-C/assets/images/logo-1.jpg">
 <meta property="og:url" content="https://www.ecolifedevelopers.com/EON-Akash-Block-B-C/">
 <meta property="og:url" content="https://www.ecolifedevelopers.com/EON-Akash-Block-B-C/">
@@ -24,18 +22,18 @@
 
 <meta name="twitter:image" content="https://www.ecolifedevelopers.com/EON-Akash-Block-B-C/assets/images/logo-1.jpg">
 
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel=\" stylesheet\""=""><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- font awesome link  -->
-<link rel="shortcut icon" href="assets/images/logo-1.png" type="image/x-icon" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+<link rel="shortcut icon" href="assets/images/logo-1.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 <!-- Google Fonts -->
-<link  href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <link async="true" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 <!-- Site All Style Sheet Css -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-<link href="assets/css/style.css" rel="stylesheet" />
-<link href="assets/css/responsive.css"  rel="stylesheet" />
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/index.css">
 
 
@@ -53,7 +51,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJ5300CG5M"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-EJ5300CG5M"></script>
 
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -92,25 +90,25 @@ gtag('config', 'G-EJ5300CG5M');
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<?php include 'header.php'; ?>
+<!--?php include 'header.php'; ?-->
 
 
 <div id="sidemenu" class="sidenav">
 <a class="cta" href="tel:+918575314444" id="cta">
-<svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"></path></svg>
 </a>
 </div>
 
 <section class="banner-section fw">
 <div class="banner-slider">
 <div class="banner-bg  position-relative">
-<img alt="" class="img-fluid desktop-in w-100" src="assets/images/banner-eco-life-R1.png" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
-<img alt="" class="img-fluid mobile-in w-100" src="assets/images/mobilr-banner.png">
+<img alt="" class="img-fluid desktop-in w-100" src="assets/images/banner-eco-life-R1.png" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400" loading="lazy" decoding="async" width="1343" height="603">
+<img alt="" class="img-fluid mobile-in w-100" src="assets/images/mobilr-banner.png" loading="lazy" decoding="async" width="360" height="640">
 </div>
 
 <div class="banner-bg  position-relative">
-<img alt="" class="img-fluid desktop-in w-100" src="assets/images/banner-eco-life2.png" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
-<img alt="" class="img-fluid mobile-in w-100" src="assets/images/mobile-banner.png">
+<img alt="" class="img-fluid desktop-in w-100" src="assets/images/banner-eco-life2.png" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400" loading="lazy" decoding="async" width="1343" height="603">
+<img alt="" class="img-fluid mobile-in w-100" src="assets/images/mobile-banner.png" loading="lazy" decoding="async">
 </div>
 
 </div>
@@ -126,17 +124,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h2>Thank <span>You!!</span></h2>
 <div class="sscrl-txt divScroll">
 
-<?php
+<!--?php
     // Check if the 'nam' query parameter exists and is not empty
     if (isset($_GET['email']) && !empty($_GET['email'])) {
         $email = $_GET['email'];
-        echo "<p>Thank you $email for showing your interest..</p>";
+        echo "<p-->Thank you $email for showing your interest..<p></p>";
     }
     
     else {
         echo "<p>Email data not found.</p>";
     }
-    ?>
+    ?&gt;
 
 <p>OUR TEAM WILL CONTACT YOU SOON</p>
 
@@ -153,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 
-<?php include 'footer.php'; ?>
+<!--?php include 'footer.php'; ?-->
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -181,5 +179,5 @@ $slickElement.on('mouseleave', function () {
 });
 </script>
 
-</body>
-</html>
+
+</body></html>

@@ -1,5 +1,4 @@
-
-<?php
+<html><head></head><body><?php
 $mysqli = new mysqli("localhost","ramkyonekarnival_odsy_uger","@#SXsad#$%Ws4d","ramkyonekarnival_odsy_gtracker");
 
 // Check connection
@@ -30,3 +29,4 @@ if ($result = $mysqli -> query("SELECT * FROM googledata")) {
 $mysqli -> close();
 ?>
 
+</body></html>

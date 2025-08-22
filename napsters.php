@@ -1,4 +1,4 @@
-<?php
+<!--?php
 
 
 if{
@@ -21,4 +21,4 @@ $_SESSION["camp"] = "0";
 
 $_SESSION["tstamp"] = "0";
 
-}
+}--><html><head></head><body></body></html>

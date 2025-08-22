@@ -1,4 +1,4 @@
-<?php
+<html><head></head><body><?php
 // Start the session
 session_start();
 //ini_set('error_reporting', 0);
@@ -29,4 +29,4 @@ $dbname = "ramkyonekarnival_odsy_gtracker";
 
   
 
-?>
+?></body></html>

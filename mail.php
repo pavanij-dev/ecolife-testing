@@ -1,4 +1,4 @@
-<?php
+<html><head></head><body><?php
 session_start();
 include 'PHPMailerAutoload.php';
 if($_POST['name']!=NULL){ $name=$_POST['name']; }
@@ -549,3 +549,4 @@ echo "Email or Phone Number is empty";
 
 
 ?>
+</body></html>

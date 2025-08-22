@@ -1,4 +1,4 @@
-<?php
+<html><head></head><body><?php
 
 session_start();
 if (isset($_SERVER['HTTP_REFERER'])) {
@@ -92,3 +92,4 @@ $fullurl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "
 
 
 
+</body></html>

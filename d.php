@@ -1,4 +1,4 @@
-<?php
+<html><head></head><body><?php
     // Program to display URL of current page.
     if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
         $link = "https";
@@ -15,4 +15,4 @@
       
     // Print the link
     echo $link;
-?>
+?></body></html>

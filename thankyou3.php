@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
 
 
 
@@ -56,11 +52,9 @@
 
 <!-- Google Fonts -->
 
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel=\" stylesheet\""=""><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&amp;display=swap"
-
-rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
 
 <!-- Favicon -->
 
@@ -70,19 +64,19 @@ rel="stylesheet">
 
 <!-- Site All Style Sheet Css -->
 
-<link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
 <link rel="stylesheet" href="assets/css/slick.css">
 
 <link rel="stylesheet" href="./assets/css/style-orr.css">
 
-<link href="assets/css/style.css" rel="stylesheet" />
+<link href="assets/css/style.css" rel="stylesheet">
 
-<link href="assets/css/responsive.css" rel="stylesheet" />
+<link href="assets/css/responsive.css" rel="stylesheet">
 
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 
@@ -248,9 +242,9 @@ height: 380px;}
 
 <!-- Start Header Navbar Area -->
 
-<?php include 'header.php'; 
+<!--?php include 'header.php'; 
 
-?>
+?-->
 
 
 
@@ -260,11 +254,11 @@ height: 380px;}
 
 <div class="inner-container clearfix">
 
-<h1 id="tc"><span style="font-size:68px">Thank you</span><br> <?php echo( $_GET['nam']); ?> for your enquiry !<br> <span style="font-size:25px">Our sales representative will call you soon with further details.</span><br>
+<h1 id="tc"><span style="font-size:68px">Thank you</span><br> <!--?php echo( $_GET['nam']); ?--> for your enquiry !<br> <span style="font-size:25px">Our sales representative will call you soon with further details.</span><br>
 
 
 
-  <?php 
+  <!--?php 
 
     $b =  8199;
 
@@ -338,7 +332,7 @@ height: 380px;}
 
      
 
-   if ($a > 0) 
+   if ($a --> 0) 
 
     {
 
@@ -346,7 +340,7 @@ height: 380px;}
 
     $a = money_format('%!i', $a);
 
-     echo ("The price is ₹ ".$a. "  * T&C Apply");
+     echo ("The price is ₹ ".$a. "  * T&amp;C Apply");
 
     }
 
@@ -354,7 +348,7 @@ height: 380px;}
 
     
 
-  ?> <sup id="apply"></sup></h1>
+  ?&gt; <sup id="apply"></sup></h1>
 
     
 
@@ -406,13 +400,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="footer-logo mb-50">
 
-<img src="assets/img/footer_logo.png" alt="Logo">
+<img src="assets/img/footer_logo.png" alt="Logo" loading="lazy" decoding="async">
 
 </div>
 
 <p class="footer-description">Welcome to Ramky One Odyssey, a one-of-its kind, pristine gated community
 
-in Kokapet | Narsingi Spread over 5.3 acres, it is an ultra premimun 3 & 4 BHK Apartments project that
+in Kokapet | Narsingi Spread over 5.3 acres, it is an ultra premimun 3 &amp; 4 BHK Apartments project that
 
 is completely in tune with today's lifestyle.
 
@@ -430,7 +424,7 @@ is completely in tune with today's lifestyle.
 
 
 
-<img class="mb-30" src="assets/img/QL.png">
+<img class="mb-30" src="assets/img/QL.png" loading="lazy" decoding="async" width="115" height="38">
 
 <ul>
 
@@ -462,7 +456,7 @@ is completely in tune with today's lifestyle.
 
 <div class="widget contact-widget ">
 
-<img class="mb-30" src="assets/img/contact.png">
+<img class="mb-30" src="assets/img/contact.png" loading="lazy" decoding="async">
 
 <div class="contact-lists ">
 
@@ -470,7 +464,7 @@ is completely in tune with today's lifestyle.
 
   <div class="icon">
 
-    <img src="assets/img/FP.png">
+    <img src="assets/img/FP.png" loading="lazy" decoding="async">
 
   </div>
 
@@ -490,7 +484,7 @@ is completely in tune with today's lifestyle.
 
   <div class="icon">
 
-    <img src="assets/img/FM.png">
+    <img src="assets/img/FM.png" loading="lazy" decoding="async">
 
   </div>
 
@@ -508,7 +502,7 @@ is completely in tune with today's lifestyle.
 
   <div class="icon">
 
-    <img src="assets/img/FL.png">
+    <img src="assets/img/FL.png" loading="lazy" decoding="async">
 
   </div>
 
@@ -568,21 +562,21 @@ Partner</p>
 
 </footer>
 
-<?php 
+<!--?php 
 
 if ($_GET['download'] == 1)
 
 {
 
-?>
+?-->
 
 <iframe src="download.php" style="display:none;"></iframe>
 
-<?php 
+<!--?php 
 
 }
 
-?>
+?-->
 
 
 
@@ -616,13 +610,14 @@ modal.find('.modal-body select option.pre-pend').empty().prepend(recipient).val(
 
 
 
-<script src="https://www.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js" data-bot="22397266" async defer></script>
+<script src="https://www.kenyt.ai/botapp/ChatbotUI/dist/js/bot-loader.js" data-bot="22397266" async="" defer=""></script>
 
 
 
-</body>
-
-</html>
 
 
 
+
+
+
+</body></html>

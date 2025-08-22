@@ -1,6 +1,6 @@
-<?php //include 'disp.php'; ?>
+<html lang="en"><head></head><body><!--?php //include 'disp.php'; ?-->
 
-<?php
+<!--?php
 
 if (isset($_GET['utm_source'])) { $utm_source = $_GET['utm_source'];}
 else { $utm_source = ''; }
@@ -26,11 +26,11 @@ else { $device = ''; }
 
 $fullurl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
-?>
+?-->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
+
+
 
 <title>Ultra Luxury 3BHK Apartments in Varthur | Ecolife Eon Akash</title>
 <meta charset="UTF-8">
@@ -55,21 +55,21 @@ $fullurl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "
 
 <meta name="twitter:image" content="https://www.ecolifedevelopers.com/EON-Akash-Block-B-C/assets/images/logo-1.webp">
 
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel=\" stylesheet\""=""><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- font awesome link  -->
 <link rel="shortcut icon" href="assets/images/logo-1.webp" type="image/x-icon">
 <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">-->
 <!-- iadded -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <!-- Google Fonts -->
-<link  href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 <!-- Site All Style Sheet Css -->
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/responsive.css"  rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/index.css">
 
 
@@ -97,9 +97,9 @@ $fullurl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "
 <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
 
 <!-- Fonts -->
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap" as="style">
-<link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap" type="font/woff2" crossorigin="anonymous">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&amp;display=swap" as="style">
+<link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&amp;display=swap" type="font/woff2" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&amp;display=swap">
 
 <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -126,7 +126,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJ5300CG5M"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-EJ5300CG5M"></script>
 
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -136,16 +136,12 @@ gtag('config', 'G-EJ5300CG5M');
 </script>
 
 
-<link rel="preload" 
-as="image" 
-href="assets/images/banner-eco-life-R1.webp" 
-type="image/webp" 
-fetchpriority="high">
+<link rel="preload" as="image" href="assets/images/banner-eco-life-R1.webp" type="image/webp" fetchpriority="high">
 
 
 
-</head>
-<body>
+
+
 
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -155,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden">
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<?php include 'header.php'; ?>
+<!--?php include 'header.php'; ?-->
 
 
 
@@ -163,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden">
 <a class="cta" href="tel:+918880804949" id="cta" aria-label="Call us at +91 88808 04949">
 <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
 <style>svg{fill:#ffffff}</style>
-<path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+<path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"></path>
 </svg>
 </a>
 </div>
@@ -188,20 +184,16 @@ height="0" width="0" style="display:none;visibility:hidden">
 
 <div class="banner-bg position-relative">
 <picture>
-<img src="assets/images/banner-eco-life-R1.webp" 
-alt="eco life" 
-class="img-fluid desktop-in w-100"
-width="1920" height="600"
-decoding="async" fetchpriority="high">
+<img src="assets/images/banner-eco-life-R1.webp" alt="eco life" class="img-fluid desktop-in w-100" width="1920" height="600" decoding="async" fetchpriority="high" loading="lazy">
 
-<img src="assets/images/mobilr-banner.webp" alt="Eco Life Banner R1" class="mobile-in w-100" decoding="async" fetchpriority="high" height="500">
+<img src="assets/images/mobilr-banner.webp" alt="Eco Life Banner R1" class="mobile-in w-100" decoding="async" fetchpriority="high" height="640" loading="lazy" width="360">
 </picture>
 </div>
 
 <div class="banner-bg position-relative">
 <picture>
-<img src="assets/images/banner-eco-life3.webp" alt="Eco Life Banner" class="img-fluid desktop-in w-100" height="500">
-<img src="assets/images/mobile-banner3.webp" alt="Eco Life Banner 3" class="mobile-in w-100" decoding="async" loading="lazy" height="500">
+<img src="assets/images/banner-eco-life3.webp" alt="Eco Life Banner" class="img-fluid desktop-in w-100" height="603" loading="lazy" decoding="async" width="1343">
+<img src="assets/images/mobile-banner3.webp" alt="Eco Life Banner 3" class="mobile-in w-100" decoding="async" loading="lazy" height="1206" width="679">
 </picture>
 </div>
 
@@ -235,31 +227,31 @@ decoding="async" fetchpriority="high">
 <div class="scr-icn-bxes fw1">
 <div class="scr-icn-bx1">
 <div class="ph-img">
-<img loading="lazy" alt="" src="assets/images/icon/ph1.webp" class="scr-hvr-off" width="48" height="48">
+<img loading="lazy" alt="" src="assets/images/icon/ph1.webp" class="scr-hvr-off" width="48" height="48" decoding="async">
 </div>
 <h5>321 Luxurious <br> Flats</h5>
 </div>
 <div class="scr-icn-bx1">
 <div class="ph-img">
-<img loading="lazy" alt="" src="assets/images/icon/ph2.webp" width="48" height="48">
+<img loading="lazy" alt="" src="assets/images/icon/ph2.webp" width="48" height="48" decoding="async">
 </div>
 <h5>3BHK from <br> 1415 - 1737 Sqft</h5>
 </div>
 <div class="scr-icn-bx1">
 <div class="ph-img">
-<img loading="lazy" alt="" src="assets/images/icon/ph3.webp" width="48" height="48">
+<img loading="lazy" alt="" src="assets/images/icon/ph3.webp" width="48" height="48" decoding="async">
 </div>
 <h5>Spread Across <br> 4.25 Acres</h5>
 </div>
 <div class="scr-icn-bx1">
 <div class="ph-img">
-<img loading="lazy" alt="" src="assets/images/icon/ph4.webp" width="48" height="48">
+<img loading="lazy" alt="" src="assets/images/icon/ph4.webp" width="48" height="48" decoding="async">
 </div>
 <h5>Over 75% Open <br> Space</h5>
 </div>
 <div class="scr-icn-bx1">
 <div class="ph-img">
-<img loading="lazy" alt="" src="assets/images/icon/ph5.webp"  width="48" height="48">
+<img loading="lazy" alt="" src="assets/images/icon/ph5.webp" width="48" height="48" decoding="async">
 </div>
 <h5>Bigger <br> Balconies</h5>
 </div>
@@ -274,7 +266,7 @@ decoding="async" fetchpriority="high">
 <div class="col-md-8 col-12">
 <h2>About <span>Us</span></h2>
 <div class="sscrl-txt divScroll">
-<p >The idea of Ecolife EON Akash is revolutionary in itself. A home nestled in greenery, away from chaos and clutter is perhaps the ultimate requirement for any home. Our architects have taken inspiration from Bangalore to create a small piece of heaven for the ones in the look-out for beautiful 3 BHK homes in Varthur and Panathur Area.</p>
+<p>The idea of Ecolife EON Akash is revolutionary in itself. A home nestled in greenery, away from chaos and clutter is perhaps the ultimate requirement for any home. Our architects have taken inspiration from Bangalore to create a small piece of heaven for the ones in the look-out for beautiful 3 BHK homes in Varthur and Panathur Area.</p>
 <p>As Ecolife Developers, we take a different approach to residential housing. While embracing nature, we utilize the latest technologies to build our smartly designed apartments in the east corridors of Bengaluru.</p>
 <p>Strategically located on the Panathur-Varthur Main Road, EON Akash’s apartments in Varthur and Panathur is positioned at the heart of Bengaluru's IT quadrilateral. This prime location isn't just about a prestigious address; it's about the advantage of effortless connectivity. Your daily commutes to work, schools, hospitals, malls, and more become a breeze, ensuring you reclaim precious moments for what truly matters.</p>
 <p>Surrounded by lush green spaces, EON Akash is more than just a residence, it's an oasis in the midst of urban hustle. The overall ambience exudes quiet sophistication, creating a haven where every moment is a celebration of fine living. While redefining luxury in our 3 BHK flats in Varthur and Panathur, also be blown away with mindfully interspersed landscapes and wide range of amenities, creating vast open areas that are both inviting and invigorating.</p>
@@ -294,22 +286,19 @@ PR/300323/005832</b>
 <label>Name <span class="text-danger">*</span>
 </label>
 <i data-feather="user" class="fea icon-sm icons"></i>
-<input type="text" name="name" id="ename" class="form-control pl-2" pattern="[a-zA-Z ]+"
-minlength="3" placeholder="Your name" required>
+<input type="text" name="name" id="ename" class="form-control pl-2" pattern="[a-zA-Z ]+" minlength="3" placeholder="Your name" required="">
 </div>
 <div class="form-group position-relative">
 <label>Mobile no <span class="text-danger">*</span>
 </label>
-<input type="tel" onkeypress='return restrictAlphabets(event)'  pattern="[6-9]{1}[0-9]{9}"  minlength="10" maxlength="13" name="phone" id="ephone" class="form-control pl-2" placeholder="Your mobile"
-required>
+<input type="tel" onkeypress="return restrictAlphabets(event)" pattern="[6-9]{1}[0-9]{9}" minlength="10" maxlength="13" name="phone" id="ephone" class="form-control pl-2" placeholder="Your mobile" required="">
 
 </div>
 <div class="form-group position-relative">
 <label>Email ID <span class="text-danger">*</span>
 </label>
 <i data-feather="mail" class="fea icon-sm icons"></i>
-<input name="email" id="eemail"  type="email" class="form-control pl-2" placeholder="Your email"
-required>
+<input name="email" id="eemail" type="email" class="form-control pl-2" placeholder="Your email" required="">
 </div>
 
 <div class="form-group position-relative">
@@ -319,7 +308,7 @@ required>
 <option value="">Select Your Preference</option>
 <option value="3 BHK - ₹ 1.36 Cr Onwards"> 3 BHK</option>
 </select> -->
-<select class="form-control pl-2" id="exampleFormControlSelect4" name="intrestedin" aria-label="Select Your Preference 3 BHK" required>
+<select class="form-control pl-2" id="exampleFormControlSelect4" name="intrestedin" aria-label="Select Your Preference 3 BHK" required="">
 <option value="your like">Select Your Preference</option>
 <option value="3 BHK - ₹ 1.36 Cr Onwards">3 BHK</option>
 </select>
@@ -371,38 +360,38 @@ required>
 <div class="prop-tabs">
 <div class="prop-tab-bx">
 <div class="b-1">
-<img loading="lazy" alt="" src="assets/img/slider.webp">
+<img loading="lazy" alt="" src="assets/img/slider.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Kids play Zone</h3>
 </div>
 </div>
 <div class="prop-tab-bx">
 <div class="b-1">
-<img loading="lazy" alt="" src="assets/img/swimming-pool.webp">
+<img loading="lazy" alt="" src="assets/img/swimming-pool.webp" decoding="async" width="121" height="113">
 <h3>Swimming Pool</h3>
 </div>
 </div>
 
 <div class="prop-tab-bx">
 <div class="b-1">
-<img loading="lazy" alt="img" src="assets/img/Party-Hall.webp">
+<img loading="lazy" alt="img" src="assets/img/Party-Hall.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Party Hall</h3>
 </div>
 </div>
 
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/entrance.webp">
+<img loading="lazy" alt="img" src="assets/img/entrance.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Entrance</h3>
 </div>
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/seat-out.webp">
+<img loading="lazy" alt="img" src="assets/img/seat-out.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Elder Resting Areas</h3>
 </div>
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/Kids-Games.webp">
+<img loading="lazy" alt="img" src="assets/img/Kids-Games.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Kids Games</h3>
 </div>
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/chess.webp">
+<img loading="lazy" alt="img" src="assets/img/chess.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Indoor Games</h3>
 </div>
 </div>
@@ -411,49 +400,49 @@ required>
 <div class="tab active-tab" id="tab32">
 <div class="prop-tabs">
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/Lounge.webp">
+<img loading="lazy" alt="img" src="assets/img/Lounge.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Lounge</h3>
 </div>
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/Kids-Soft-Toy-Room.webp">
+<img loading="lazy" alt="img" src="assets/img/Kids-Soft-Toy-Room.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Kids Soft Toy room</h3>
 </div>
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/Aerobics.webp">
+<img loading="lazy" alt="img" src="assets/img/Aerobics.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Aerobics</h3>
 </div>
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/cycling.webp">
+<img loading="lazy" alt="img" src="assets/img/cycling.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Outdoor Gym(Bicycling)</h3>
 </div>
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/slider.webp">
+<img loading="lazy" alt="img" src="assets/img/slider.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Children's Play Area</h3>
 </div>
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/informal-sitting-area.webp">
+<img loading="lazy" alt="img" src="assets/img/informal-sitting-area.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Informal Seating Area</h3>
 </div>
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/amphi2.webp">
+<img loading="lazy" alt="img" src="assets/img/amphi2.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Amphitheatre</h3>
 </div>
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/basket-ball.webp">
+<img loading="lazy" alt="img" src="assets/img/basket-ball.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Basket Ball</h3>
 </div>
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/outdoor-gym.webp">
+<img loading="lazy" alt="img" src="assets/img/outdoor-gym.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Outdoor Gym</h3>
 </div>
 
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/Yoga-Center.webp">
+<img loading="lazy" alt="img" src="assets/img/Yoga-Center.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Yoga Center</h3>
 </div>
 
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/Educative-Wall.webp">
+<img loading="lazy" alt="img" src="assets/img/Educative-Wall.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Educative Wall</h3>
 </div>
 
@@ -463,12 +452,12 @@ required>
 <div class="tab " id="tab34">
 <div class="prop-tabs">
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/charging-point.webp">
+<img loading="lazy" alt="img" src="assets/img/charging-point.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Power Backup</h3>
 </div>
 
 <div class="prop-tab-bx">
-<img loading="lazy" alt="img" src="assets/img/Water-Wate-Managment.webp">
+<img loading="lazy" alt="img" src="assets/img/Water-Wate-Managment.webp" decoding="async" width="121" height="113">
 <h3 class="ml-2">Water Waste Management</h3>
 </div>
 
@@ -499,7 +488,7 @@ required>
 <div class="col-md-12 plan-box">
 <div class="image-box">
 <a href="assets/images/mp1.webp" data-fancybox="group1" data-caption="Master Plan">
-<img loading="lazy" src="assets/images/mp1.webp" alt="Master Plan" class="responsive w-h-img" data-lazy="" data-processed="true">
+<img loading="lazy" src="assets/images/mp1.webp" alt="Master Plan" class="responsive w-h-img" data-lazy="" data-processed="true" decoding="async" width="944" height="800">
 </a>
 </div>
 </div>
@@ -508,7 +497,7 @@ required>
 <div class="tab active-tab" id="tab11">
 <div class="row">
 <a href="assets/images/fp1.webp" data-fancybox="group3" data-caption="FLOOR PLAN">
-<img loading="lazy" src="assets/images/fp1.webp" alt="Plan">
+<img loading="lazy" src="assets/images/fp1.webp" alt="Plan" decoding="async" width="4649" height="3283">
 </a>
 </div>
 </div>
@@ -519,56 +508,56 @@ required>
 <div class="col-md-4">
 <div class="image-box">
 <!-- <a href="assets/images/unit1.webp" data-fancybox="group4" data-caption="3 BHK"> -->
-<img loading="lazy" src="assets/images/unit1-1.webp" alt="Plan">
-</a>
+<img loading="lazy" src="assets/images/unit1-1.webp" alt="Plan" decoding="async" width="239" height="169">
+
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="image-box">
 <!-- <a href="assets/images/unit2.webp" data-fancybox="group4" data-caption="3 BHK"> -->
-<img loading="lazy" src="assets/images/unit2-1.webp" alt="Plan">
-</a>
+<img loading="lazy" src="assets/images/unit2-1.webp" alt="Plan" decoding="async" width="239" height="169">
+
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="image-box">
 <!-- <a href="assets/images/unit3.jpg" data-fancybox="group4" data-caption="3 BHK"> -->
-<img loading="lazy" src="assets/images/unit3-1.webp" alt="Plan">
-</a>
+<img loading="lazy" src="assets/images/unit3-1.webp" alt="Plan" decoding="async" width="239" height="169">
+
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="image-box">
 <!-- <a href="assets/images/unit4.jpg" data-fancybox="group4" data-caption="3 BHK"> -->
-<img loading="lazy" src="assets/images/unit4-1.webp" alt="Plan">
-</a>
+<img loading="lazy" src="assets/images/unit4-1.webp" alt="Plan" decoding="async" width="239" height="169">
+
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="image-box">
 <!-- <a href="assets/images/unit5.jpg" data-fancybox="group4" data-caption="3 BHK"> -->
-<img loading="lazy" src="assets/images/unit5-1.webp" alt="Plan">
-</a>
+<img loading="lazy" src="assets/images/unit5-1.webp" alt="Plan" decoding="async" width="239" height="169">
+
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="image-box">
 <!-- <a href="assets/images/unit6.jpg" data-fancybox="group4" data-caption="3 BHK"> -->
-<img loading="lazy" src="assets/images/unit6-1.webp" alt="Plan">
-</a>
+<img loading="lazy" src="assets/images/unit6-1.webp" alt="Plan" decoding="async" width="239" height="169">
+
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="image-box">
 <!-- <a href="assets/images/unit7.jpg" data-fancybox="group4" data-caption="3 BHK"> -->
-<img loading="lazy" src="assets/images/unit7-1.webp" alt="Plan">
-</a>
+<img loading="lazy" src="assets/images/unit7-1.webp" alt="Plan" decoding="async" width="239" height="169">
+
 </div>
 </div>
 
@@ -628,8 +617,7 @@ required>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal13.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal13.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -639,8 +627,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal14.webp" data-src="assets/images/gal14.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal14.webp" data-src="assets/images/gal14.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -650,8 +637,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal15.webp" data-src="assets/images/gal15.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal15.webp" data-src="assets/images/gal15.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -661,8 +647,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal16.webp"  data-src="assets/images/gal16.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal16.webp" data-src="assets/images/gal16.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -672,8 +657,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal17.webp"  data-src="assets/images/gal17.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal17.webp" data-src="assets/images/gal17.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -683,8 +667,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal18.webp"  data-src="assets/images/gal18.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal18.webp" data-src="assets/images/gal18.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -694,8 +677,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal6.webp"  data-src="assets/images/gal6.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal6.webp" data-src="assets/images/gal6.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -705,8 +687,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal7.webp"  data-src="assets/images/gal7.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal7.webp" data-src="assets/images/gal7.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -716,8 +697,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal8.webp"  data-src="assets/images/gal8.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal8.webp" data-src="assets/images/gal8.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -727,8 +707,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal9.webp"  data-src="assets/images/gal9.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal9.webp" data-src="assets/images/gal9.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -738,8 +717,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal10.webp"  data-src="assets/images/gal10.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal10.webp" data-src="assets/images/gal10.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -749,8 +727,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal11.webp"  data-src="assets/images/gal11.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal11.webp" data-src="assets/images/gal11.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -760,8 +737,7 @@ class="responsive" data-lazy>
 <div class="single-rooms-box">
 <div class="room-img">
 <div class="img">
-<img loading="lazy"  alt="img" src="assets/images/gal12.webp"  data-src="assets/images/gal12.webp"
-class="responsive" data-lazy>
+<img loading="lazy" alt="img" src="assets/images/gal12.webp" data-src="assets/images/gal12.webp" class="responsive" data-lazy="" decoding="async" width="381" height="394">
 </div>
 </div>
 
@@ -774,10 +750,10 @@ class="responsive" data-lazy>
 <section class="loc-high-light fw">
 <div class="container">
 <h4>Location <span>Highlights</span></h4>
-<div class="loc-block fw" >
+<div class="loc-block fw">
 <div class="loc-blk one">
 <div class="loc-icn">
-<img loading="lazy" src="assets/images/icon/workplace.webp" alt="img">
+<img loading="lazy" src="assets/images/icon/workplace.webp" alt="img" decoding="async" width="64" height="64">
 <h2>Work</h2>
 </div>
 <div class="loc-cnt">	
@@ -794,7 +770,7 @@ class="responsive" data-lazy>
 <!-- <div class="loc-pt"> -->
 <div class="loc-blk two">
 <div class="loc-icn">
-<img loading="lazy" src="assets/images/icon/school.webp" alt="img">
+<img loading="lazy" src="assets/images/icon/school.webp" alt="img" decoding="async" width="64" height="64">
 <h2>Schools</h2>
 </div>
 <div class="loc-cnt">
@@ -813,7 +789,7 @@ class="responsive" data-lazy>
 <!-- <div class="loc-pt"> -->
 <div class="loc-blk three">
 <div class="loc-icn">
-<img loading="lazy" src="assets/images/icon/autonomous-car.webp" alt="img">
+<img loading="lazy" src="assets/images/icon/autonomous-car.webp" alt="img" decoding="async" width="64" height="64">
 <h2>Connectivity</h2>
 </div>
 <div class="loc-cnt">
@@ -831,7 +807,7 @@ class="responsive" data-lazy>
 <!-- <div class="loc-pt"> -->
 <div class="loc-blk four">
 <div class="loc-icn">
-<img loading="lazy" src="assets/images/icon/hospital.webp" alt="img">
+<img loading="lazy" src="assets/images/icon/hospital.webp" alt="img" decoding="async" width="64" height="64">
 <h2>Hospitals</h2>
 </div>
 <div class="loc-cnt">
@@ -849,9 +825,9 @@ class="responsive" data-lazy>
 
 <section class="sec1 fw">
 <div class="balcony position-relative">
-<img loading="lazy" src="assets/images/Image-Gal.webp" alt="">
+<img loading="lazy" src="assets/images/Image-Gal.webp" alt="" decoding="async" width="1309" height="632">
 <p class="balc-description">King Sized Balcony <br>
-for Elevated Living & Stunning Views</p>
+for Elevated Living &amp; Stunning Views</p>
 </div>
 </section>
 
@@ -870,7 +846,7 @@ for Elevated Living & Stunning Views</p>
 
 <div class="container custom-width4">
 
-<div class="row" >
+<div class="row">
 
 <div class=" col-md-8 cl speci-hdng">
 <h2>Specifications</h2>
@@ -892,7 +868,7 @@ seismic parameters of this zone. </li>
 
 <ul>
 <li>External walls - 6” Solid Bricks with cement plastering.</li>
-<li> The internal walls 6" & 4” Solid Bricks.</li>
+<li> The internal walls 6" &amp; 4” Solid Bricks.</li>
 </ul>
 
 </div>
@@ -904,7 +880,7 @@ seismic parameters of this zone. </li>
 <div class="accordion-content">
 
 <ul>
-<li>Living, Dining & Bedrooms – Double charged Vitrified Tiles.</li>
+<li>Living, Dining &amp; Bedrooms – Double charged Vitrified Tiles.</li>
 <li>Kitchen – Double charged vitrified tiles.</li>
 <li>Toilets – anti-skid ceramic tiles.</li>
 <li>Balcony – anti-skid ceramic tiles.</li>
@@ -921,7 +897,7 @@ seismic parameters of this zone. </li>
 
 <ul>
 <li>External –Exterior emulsion paint.</li>
-<li>Living, Dining, Bedrooms & Kitchen –Interior emulsion paint.</li>
+<li>Living, Dining, Bedrooms &amp; Kitchen –Interior emulsion paint.</li>
 <li>Toilets – ceramic tiles up to 7feet height.</li>
 <li>Ceiling - Emulsion paint.</li>
 </ul>
@@ -930,7 +906,7 @@ seismic parameters of this zone. </li>
 </div>
 
 <div class="br-styles">
-<div class="accordion-heading"><b>Kitchen & Utility</b></div>
+<div class="accordion-heading"><b>Kitchen &amp; Utility</b></div>
 <div class="accordion-content">
 
 <ul>
@@ -950,11 +926,11 @@ seismic parameters of this zone. </li>
 <div class="accordion-content">
 
 <ul>
-<li>T.V point in Living & Master bedroom.</li>
+<li>T.V point in Living &amp; Master bedroom.</li>
 <li>Modular electrical switches.</li>
 <li>Power socket for A.C. in Master bedrooms.</li>
 <li>Provision for A.C. in Living and other bedrooms.</li>
-<li>Telephone point & Intercom facility in Living or Dining.</li>                                        
+<li>Telephone point &amp; Intercom facility in Living or Dining.</li>                                        
 <li>Power loads for each unit.</li>                                        
 <li>3 BHK - 4 kW.</li>
 </ul>
@@ -981,7 +957,7 @@ seismic parameters of this zone. </li>
 
 <div class="col-mb-4 cl-img">
 <span class="spec-img">
-<img loading="lazy" src="assets/images/icon/logo.webp" alt="img">
+<img loading="lazy" src="assets/images/icon/logo.webp" alt="img" decoding="async" width="201" height="70">
 </span>
 </div>
 
@@ -999,15 +975,7 @@ seismic parameters of this zone. </li>
 </div>
 <div class="shadow bg-white-form">
 <div class="address-mp">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5290689477756!2d77.7317284!3d12.9379611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae126511bb99d9%3A0x22c23f9f69e1d164!2s30%2C%20Balagere%20Rd%2C%20inside%20Ecolife%20Developers%2C%20Devasthanagalu%2C%20Balagere%2C%20Varthur%2C%20Bengaluru%2C%20Karnataka%20560087!5e0!3m2!1sen!2sin!4v1697708077474!5m2!1sen!2sin" 
-width="600" 
-height="450" 
-style="border:0;" 
-allowfullscreen="" 
-loading="lazy" 
-referrerpolicy="no-referrer-when-downgrade"
-title="Google Maps location of Eco Life project"
->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5290689477756!2d77.7317284!3d12.9379611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae126511bb99d9%3A0x22c23f9f69e1d164!2s30%2C%20Balagere%20Rd%2C%20inside%20Ecolife%20Developers%2C%20Devasthanagalu%2C%20Balagere%2C%20Varthur%2C%20Bengaluru%2C%20Karnataka%20560087!5e0!3m2!1sen!2sin!4v1697708077474!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps location of Eco Life project">
 </iframe>
 </div>
 </div>
@@ -1021,14 +989,13 @@ title="Google Maps location of Eco Life project"
 <label>Name <span class="text-danger">*</span>
 </label>
 <i data-feather="user" class="fea icon-sm icons"></i>
-<input type="text" name="name" id="cname" class="form-control pl-2" pattern="[a-zA-Z ]+"
-minlength="3" placeholder="Your name" required>
+<input type="text" name="name" id="cname" class="form-control pl-2" pattern="[a-zA-Z ]+" minlength="3" placeholder="Your name" required="">
 </div>
 </div>
 <div class="col-md-6">
 <div class="form-group position-relative">
 <label>Mobile no <span class="text-danger">*</span></label>
-<input type="tel" onkeypress='return restrictAlphabets(event)' pattern="[7-9]{1}[0-9]{9}"  minlength="10" maxlength="13" name="phone" id="cphone" class="form-control pl-2" placeholder="Your mobile" required>
+<input type="tel" onkeypress="return restrictAlphabets(event)" pattern="[7-9]{1}[0-9]{9}" minlength="10" maxlength="13" name="phone" id="cphone" class="form-control pl-2" placeholder="Your mobile" required="">
 </div>
 </div>
 <div class="col-md-6">
@@ -1036,14 +1003,13 @@ minlength="3" placeholder="Your name" required>
 <label>Email ID <span class="text-danger">*</span>
 </label>
 <i data-feather="mail" class="fea icon-sm icons"></i>
-<input name="email" id="cemail"  type="email" class="form-control pl-2" placeholder="Your email"
-required>
+<input name="email" id="cemail" type="email" class="form-control pl-2" placeholder="Your email" required="">
 </div>
 </div>
 <div class="col-md-6">
 <div class="form-group position-relative">
 <label for="exampleFormControlSelect6">Preference<span class="text-danger">*</span></label>
-<select class="form-control pl-2" id="exampleFormControlSelect6"  name="intrestedin" required>
+<select class="form-control pl-2" id="exampleFormControlSelect6" name="intrestedin" required="">
 <option value="">Select Your Preference</option>
 <option value="3 BHK - ₹ 1.36 Cr Onwards"> 3 BHK </option>
 </select>
@@ -1202,7 +1168,7 @@ Yes, Ecolife Eon is fully BBMP and RERA approved, ensuring that the project meet
 <div class="modal-header">
 <h5 class="modal-title" id="exampleModalLabel2">Unlock Price</h5>
 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
+<span aria-hidden="true">×</span>
 </button>
 </div>
 <div class="modal-body">
@@ -1212,27 +1178,24 @@ Yes, Ecolife Eon is fully BBMP and RERA approved, ensuring that the project meet
 <label>Name <span class="text-danger">*</span>
 </label>
 <i data-feather="user" class="fea icon-sm icons"></i>
-<input type="text" name="name" id="name" class="form-control pl-2" pattern="[a-zA-Z ]+"
-minlength="3" placeholder="Your name" required>
+<input type="text" name="name" id="name" class="form-control pl-2" pattern="[a-zA-Z ]+" minlength="3" placeholder="Your name" required="">
 </div>
 <div class="form-group position-relative">
 <label>Mobile no <span class="text-danger">*</span>
 </label>
-<input type="tel" onkeypress='return restrictAlphabets(event)' pattern="[7-9]{1}[0-9]{9}"  minlength="10" maxlength="13" name="mobile" id="mobile" class="form-control pl-2" placeholder="Your mobile"
-required>
+<input type="tel" onkeypress="return restrictAlphabets(event)" pattern="[7-9]{1}[0-9]{9}" minlength="10" maxlength="13" name="mobile" id="mobile" class="form-control pl-2" placeholder="Your mobile" required="">
 
 </div>
 <div class="form-group position-relative">
 <label>Email ID <span class="text-danger">*</span>
 </label>
 <i data-feather="mail" class="fea icon-sm icons"></i>
-<input name="email" id="email"  type="email" class="form-control pl-2" placeholder="Your email"
-required>
+<input name="email" id="email" type="email" class="form-control pl-2" placeholder="Your email" required="">
 </div>
 
 <div class="form-group position-relative">
 <label for="exampleFormControlSelect5">Preference<span class="text-danger">*</span></label>
-<select class="form-control pl-2" id="exampleFormControlSelect5"  name="intrestedin" required>
+<select class="form-control pl-2" id="exampleFormControlSelect5" name="intrestedin" required="">
 <option value="">Select Your Preference</option>
 <option value="3 BHK - ₹ 1.36 Cr Onwards"> 3 BHK </option>
 </select>
@@ -1260,7 +1223,7 @@ required>
 </div>
 </div>
 
-<?php include 'footer.php'; ?>
+<!--?php include 'footer.php'; ?-->
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1294,5 +1257,5 @@ $slickElement.slick('slickPlay'); // Resume auto-slide when not hovering
 });
 </script>
 
-</body>
-</html>
+
+</body></html>

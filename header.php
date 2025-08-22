@@ -1,6 +1,4 @@
-<!-- Start Header Navbar Area -->
-<!-- Start Header Navbar Area -->
-<div class="cta-btns" data-target="#staticBackdrop">
+<!-- Start Header Navbar Area --><!-- Start Header Navbar Area --><html><head></head><body><div class="cta-btns" data-target="#staticBackdrop">
 <!-- <a href = "#contactus">Contact Us</a> -->
 <a class="btn" data-toggle="modal" data-target="#staticBackdrop">
 Contact Us
@@ -13,7 +11,7 @@ Contact Us
 <div class="modal-header">
 <h5 class="modal-title" id="staticBackdropLabel">Contact Us</h5>
 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
+<span aria-hidden="true">×</span>
 </button>
 </div>
 <div class="modal-body">
@@ -23,28 +21,25 @@ Contact Us
 <label>Name <span class="text-danger">*</span>
 </label>
 <i data-feather="user" class="fea icon-sm icons"></i>
-<input type="text" name="name" id="csname" class="form-control pl-2" pattern="[a-zA-Z ]+"
-minlength="3" placeholder="Your name" required>
+<input type="text" name="name" id="csname" class="form-control pl-2" pattern="[a-zA-Z ]+" minlength="3" placeholder="Your name" required="">
 </div>
 <div class="form-group position-relative">
 <label>Mobile no <span class="text-danger">*</span>
 </label>
-<input type="tel" onkeypress='return restrictAlphabets(event)'  pattern="[7-9]{1}[0-9]{9}"  minlength="10" maxlength="13" name="phone" id="csphone" class="form-control pl-2" placeholder="Your mobile"
-required>
+<input type="tel" onkeypress="return restrictAlphabets(event)" pattern="[7-9]{1}[0-9]{9}" minlength="10" maxlength="13" name="phone" id="csphone" class="form-control pl-2" placeholder="Your mobile" required="">
 
 </div>
 <div class="form-group position-relative">
 <label>Email ID <span class="text-danger">*</span>
 </label>
 <i data-feather="mail" class="fea icon-sm icons"></i>
-<input name="email" id="csemail"  type="email" class="form-control pl-2" placeholder="Your email"
-required>
+<input name="email" id="csemail" type="email" class="form-control pl-2" placeholder="Your email" required="">
 </div>
 
 <div class="form-group position-relative">
 <label>Preference<span class="text-danger">*</span>
 </label>
-<select class="form-control pl-2"  id="exampleFormControlSelect7" name="intrestedin" required>
+<select class="form-control pl-2" id="exampleFormControlSelect7" name="intrestedin" required="">
 <option value="">Select Your Preference</option>
 <option value="3 BHK - ₹ 1.36 Cr Onwards"> 3 BHK
 </option>
@@ -88,18 +83,12 @@ required>
 
 <div class="container">
 <a class="navbar-brand js-scroll" href="index.php">
-<img src="assets/images/logo.svg" class="white-logo" alt="logo" width="120" height="40">
+<img src="assets/images/logo.svg" class="white-logo" alt="logo" width="120" height="40" loading="lazy" decoding="async">
 <div class="d-flex">
-<img src="assets/images/logo.svg"  class="black-logo" alt="logo">
+<img src="assets/images/logo.svg" class="black-logo" alt="logo" loading="lazy" decoding="async" width="201" height="70">
 </div>
 </a>
-<button class="navbar-toggler collapsed" 
-type="button" 
-data-toggle="collapse" 
-data-target="#navbardefault" 
-aria-controls="navbardefault" 
-aria-expanded="false" 
-aria-label="Toggle navigation">
+<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbardefault" aria-controls="navbardefault" aria-expanded="false" aria-label="Toggle navigation">
 
 <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbardefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation"></button> -->
 <span></span>
@@ -109,7 +98,7 @@ aria-label="Toggle navigation">
 
 <div class="navbar-collapse collapse justify-content-center mnu-hdr" id="navbardefault">
 
-<ul class="navbar-nav" >
+<ul class="navbar-nav">
 <li class="nav-item">
 <a class="nav-link js-scroll active" href="index.php">Home</a>
 </li>
@@ -144,3 +133,4 @@ aria-label="Toggle navigation">
 </nav>
 </header>
 
+</body></html>

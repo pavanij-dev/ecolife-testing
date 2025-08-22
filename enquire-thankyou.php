@@ -1,8 +1,8 @@
-<?php //include 'disp.php'; ?>
+<html lang="en"><head></head><body><!--?php //include 'disp.php'; ?-->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
+
+
 
 <title>Ultra Luxury 3BHK Apartments in Varthur | Ecolife Eon Akash</title>
 <meta charset="UTF-8">
@@ -29,18 +29,18 @@
 <link rel="canonical" href="https://www.ecolifedevelopers.com/EON-Akash-Block-B-C/">
 
 
-<link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon" />
+<link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
 <!-- font awesome link  -->
-<link rel="shortcut icon" href="assets/images/logo-1.png" type="image/x-icon" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+<link rel="shortcut icon" href="assets/images/logo-1.png" type="image/x-icon">
+<link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel=\" stylesheet\""=""><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 <!-- Google Fonts -->
-<link  href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <link async="true" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 <!-- Site All Style Sheet Css -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-<link href="assets/css/style.css" rel="stylesheet" />
-<link href="assets/css/responsive.css"  rel="stylesheet" />
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/index.css">
 
 <!-- Google Tag Manager -->
@@ -56,13 +56,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 
-</head>
-<body>
 
 
 
 
-<?php include_once('header.php'); ?>
+
+
+<!--?php include_once('header.php'); ?-->
 
 <section class="enquire-thank">
 
@@ -72,7 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="you">
     <h1>THANK YOU!</h1>
     <div class="thank-imgs">
-        <img src="assets/images/quality-1.png" alt="">
+        <img src="assets/images/quality-1.png" alt="" loading="lazy" decoding="async" width="256" height="256">
     </div>
     <div class="response">
         <p>Your Response has been Submitted. We Will get back to you shortly.</p>
@@ -89,7 +89,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </section>
 
-<?php include_once('footer.php'); ?>
+<!--?php include_once('footer.php'); ?-->
 <script>
     // Specify the PDF file URL
     var pdfUrl = 'right_side_bg.pdf';
@@ -103,5 +103,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     downloadLink.click();
 </script>
 
-</body>
-</html>
+
+
+</body></html>

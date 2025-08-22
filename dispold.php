@@ -1,4 +1,4 @@
-<?php
+<html><head></head><body><?php
 // Start the session
 session_start();
 //ini_set('error_reporting', 0);
@@ -45,4 +45,4 @@ $_SESSION["uurl"] = $link .= $_SERVER['REQUEST_URI'];
 }
   
 
-?>
+?></body></html>
