@@ -3,6 +3,7 @@ const fs = require("fs-extra");
 const path = require("path");
 const glob = require("glob");
 const cheerio = require("cheerio");
+const { minify: minifyHtml } = require("html-minifier-terser");
 const postcss = require("postcss");
 const purgecss = require("@fullhuman/postcss-purgecss");
 const cssnano = require("cssnano");
@@ -25,6 +26,29 @@ async function ensureOut() {
 
 async function copyStatic() {
   await fs.copy(SRC_DIR, OUT_DIR);
+}
+
+async function minifyHtmlPhpFiles() {
+  const files = glob.sync(`${OUT_DIR}/**/*.{html,php}`);
+  await Promise.all(
+    files.map(async (file) => {
+      let content = await fs.readFile(file, "utf8");
+      try {
+        const minified = await minifyHtml(content, {
+          collapseWhitespace: true,
+          removeComments: true,
+          removeRedundantAttributes: true,
+          keepClosingSlash: true,
+          minifyCSS: true,
+          minifyJS: true,
+          ignoreCustomFragments: [/<\?php[\s\S]*?\?>/], // 🚀 Don't touch PHP tags
+        });
+        await fs.writeFile(file, minified, "utf8");
+      } catch (e) {
+        console.warn(`Skipping minify for ${file} (likely PHP issue)`);
+      }
+    })
+  );
 }
 
 async function processCssFiles() {
@@ -136,7 +160,7 @@ async function transformHtmlImages() {
 async function main() {
   await ensureOut();
   await copyStatic();
-  // ❌ Removed minifyHtmlPhpFiles
+  await minifyHtmlPhpFiles();
   await processCssFiles();
   await minifyJsFiles();
   await optimizeImages();
