@@ -81,7 +81,7 @@ jobs:
       - name: Replace <img> with <picture>
         run: node assets/js/replace-img-with-picture.js
 
-            - name: Add Lazy Loading to Images
+      - name: Add Lazy Loading to Images
         run: |
           cd optimized
           find . -iname "*.php" -type f | while read -r file; do
