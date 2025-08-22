@@ -19,7 +19,7 @@ glob
     const ext = path.extname(relativePath).toLowerCase();
     const baseName = path.basename(relativePath, ext);
     const dir = path.dirname(relativePath);
-    const absInputPath = path.join(projectRoot, relativePath); // ✅ absolute path for sharp
+    const absInputPath = path.join(projectRoot, relativePath); // ✅ absolute path for
 
     sizes.forEach((size) => {
       const outputDir = path.join(projectRoot, dir, `${size}w`);
