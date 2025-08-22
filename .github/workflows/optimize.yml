@@ -34,23 +34,19 @@ jobs:
       - name: Copy files to optimized directory
         run: |
           cp -r *.php optimized/ 2>/dev/null || echo "No PHP files found"
-          [ -d css ] && cp -r css optimized/ || echo "CSS directory not found"
-          [ -d js ] && cp -r js optimized/ || echo "JS directory not found"
-          [ -d images ] && cp -r images optimized/ || echo "Images directory not found"
-          [ -d fonts ] && cp -r fonts optimized/ || echo "Fonts directory not found"
-          cp -r *.html optimized/ 2>/dev/null || echo "No HTML files found"
+          [ -d assets ] && cp -r assets optimized/ || echo "Assets directory not found"
 
       # ❌ Removed HTML/PHP Minify step
 
       - name: Purge unused CSS
         run: |
           cd optimized
-          if [ -d css ]; then
-            find css -iname "*.css" | while read -r file; do
+          if [ -d assets/css ]; then
+            find assets/css -iname "*.css" | while read -r file; do
               echo "Purging CSS: $file"
               purgecss \
                 --css "$file" \
-                --content "**/*.php" "**/*.html" "**/*.js" \
+                --content "**/*.php" "**/*.js" \
                 --output "$(dirname "$file")" \
                 --rejected
             done
@@ -59,8 +55,8 @@ jobs:
       - name: Minify CSS
         run: |
           cd optimized
-          if [ -d css ]; then
-            find css -iname "*.css" | while read -r file; do
+          if [ -d assets/css ]; then
+            find assets/css -iname "*.css" | while read -r file; do
               echo "Minifying CSS: $file"
               cleancss --output "$file" "$file"
             done
@@ -69,8 +65,8 @@ jobs:
       - name: Minify JavaScript
         run: |
           cd optimized
-          if [ -d js ]; then
-            find js -iname "*.js" | while read -r file; do
+          if [ -d assets/js ]; then
+            find assets/js -iname "*.js" | while read -r file; do
               echo "Minifying JS: $file"
               terser "$file" --compress drop_console=true,drop_debugger=true --mangle --output "$file"
             done
@@ -88,7 +84,7 @@ jobs:
       - name: Add Lazy Loading to Images
         run: |
           cd optimized
-          find . \( -iname "*.html" -o -iname "*.php" \) -type f | while read -r file; do
+          find . -iname "*.php" -type f | while read -r file; do
             echo "Adding lazy loading to: $file"
             node -e "
               const fs = require('fs');
@@ -111,7 +107,7 @@ jobs:
       - name: Add preload for critical resources
         run: |
           cd optimized
-          find . \( -iname "*.html" -o -iname "*.php" \) -type f | while read -r file; do
+          find . -iname "*.php" -type f | while read -r file; do
             echo "Adding preload links to: $file"
             node -e "
               const fs = require('fs');
@@ -120,7 +116,7 @@ jobs:
                 let html = fs.readFileSync('$file', 'utf8');
                 const \$ = cheerio.load(html, { decodeEntities: false });
                 if (\$('link[rel=\"stylesheet\"]').length > 0) {
-                  \$('link[rel=\"stylesheet\"]').first().before('<link rel=\"preload\" href=\"css/style.css\" as=\"style\" onload=\"this.onload=null;this.rel=\\\"stylesheet\\\"\">');
+                  \$('link[rel=\"stylesheet\"]').first().before('<link rel=\"preload\" href=\"assets/css/style.css\" as=\"style\" onload=\"this.onload=null;this.rel=\\\"stylesheet\\\"\">');
                 }
                 fs.writeFileSync('$file', \$.html());
               } catch (error) { console.log('Error processing $file:', error.message); }
@@ -135,7 +131,7 @@ jobs:
 
       - name: Gzip CSS and JS assets
         run: |
-          find assets/css assets/js -type f \( -iname "*.css" -o -iname "*.js" \) -exec gzip -kf {} \;
+          find optimized/assets/css optimized/assets/js -type f \( -iname "*.css" -o -iname "*.js" \) -exec gzip -kf {} \;
 
       - name: Create optimization report
         run: |
@@ -145,9 +141,9 @@ jobs:
           echo "" >> optimization-report.md
           echo "## File Counts:" >> optimization-report.md
           echo "- PHP files: $(find . -name \"*.php\" | wc -l)" >> optimization-report.md
-          echo "- CSS files: $(find . -name \"*.css\" | wc -l)" >> optimization-report.md
-          echo "- JS files: $(find . -name \"*.js\" | wc -l)" >> optimization-report.md
-          echo "- Images: $(find images -type f \( -iname \"*.jpg\" -o -iname \"*.jpeg\" -o -iname \"*.png\" -o -iname \"*.webp\" \) | wc -l)" >> optimization-report.md
+          echo "- CSS files: $(find assets/css -name \"*.css\" | wc -l)" >> optimization-report.md
+          echo "- JS files: $(find assets/js -name \"*.js\" | wc -l)" >> optimization-report.md
+          echo "- Images: $(find assets/images -type f \( -iname \"*.jpg\" -o -iname \"*.jpeg\" -o -iname \"*.png\" -o -iname \"*.webp\" \) | wc -l)" >> optimization-report.md
           echo "" >> optimization-report.md
           echo "## Total Size:" >> optimization-report.md
           echo "- Total size: $(du -sh . | cut -f1)" >> optimization-report.md
@@ -184,4 +180,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: optimization-report
-          path: optimization-report.md
+          path: optimized/optimization-report.md
