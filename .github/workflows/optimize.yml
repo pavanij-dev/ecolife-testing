@@ -93,9 +93,9 @@ jobs:
               try {
                 let html = fs.readFileSync("'$file'", "utf8");
 
-                // Extract PHP blocks
+                // Extract PHP-style blocks (both <?php ?> and <!--?php ?-->)
                 const phpBlocks = [];
-                html = html.replace(/<\?php[\s\S]*?\?>/g, (match) => {
+                html = html.replace(/(<\?php[\s\S]*?\?>|<!--\?php[\s\S]*?\?-->)/g, (match) => {
                   phpBlocks.push(match);
                   return "___PHP_BLOCK_" + (phpBlocks.length - 1) + "___";
                 });
@@ -123,25 +123,48 @@ jobs:
             '
           done
 
-
       - name: Add preload for critical resources
         run: |
           cd optimized
           find . -iname "*.php" -type f | while read -r file; do
             echo "Adding preload links to: $file"
-            node -e "
-              const fs = require('fs');
-              const cheerio = require('cheerio');
+            node -e '
+              const fs = require("fs");
+              const cheerio = require("cheerio");
+
               try {
-                let html = fs.readFileSync('$file', 'utf8');
-                const \$ = cheerio.load(html, { decodeEntities: false });
-                if (\$('link[rel=\"stylesheet\"]').length > 0) {
-                  \$('link[rel=\"stylesheet\"]').first().before('<link rel=\"preload\" href=\"assets/css/style.css\" as=\"style\" onload=\"this.onload=null;this.rel=\\\"stylesheet\\\"\">');
+                let html = fs.readFileSync("'$file'", "utf8");
+
+                // Extract PHP-style blocks (both <?php ?> and <!--?php ?-->)
+                const phpBlocks = [];
+                html = html.replace(/(<\?php[\s\S]*?\?>|<!--\?php[\s\S]*?\?-->)/g, (match) => {
+                  phpBlocks.push(match);
+                  return "___PHP_BLOCK_" + (phpBlocks.length - 1) + "___";
+                });
+
+                // Load HTML into Cheerio
+                const $ = cheerio.load(html, { decodeEntities: false });
+
+                // Add preload before first stylesheet
+                if ($("link[rel=\"stylesheet\"]").length > 0) {
+                  $("link[rel=\"stylesheet\"]").first().before(
+                    "<link rel=\"preload\" href=\"assets/css/style.css\" as=\"style\" onload=\"this.onload=null;this.rel=\\\"stylesheet\\\"\">"
+                  );
                 }
-                fs.writeFileSync('$file', \$.html());
-              } catch (error) { console.log('Error processing $file:', error.message); }
-            "
+
+                // Restore PHP blocks
+                let finalHtml = $.html();
+                phpBlocks.forEach((block, i) => {
+                  finalHtml = finalHtml.replace("___PHP_BLOCK_" + i + "___", block);
+                });
+
+                fs.writeFileSync("'$file'", finalHtml);
+              } catch (error) {
+                console.log("Error processing '$file':", error.message);
+              }
+            '
           done
+
 
       - name: "Add font-display: swap to CSS fonts"
         run: node assets/js/add-font-display-swap.js
